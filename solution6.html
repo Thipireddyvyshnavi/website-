@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Profiles</title>
+
+  <style>
+    /* Base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f5f7fa;
+      color: #2c3e50;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #34495e;
+    }
+
+    /* Container styling */
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Profile card styling */
+    .profile-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      width: 280px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    /* Profile image */
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db;
+      margin-bottom: 15px;
+    }
+
+    /* Name & title */
+    .name {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+      color: #2c3e50;
+    }
+
+    .title {
+      font-size: 1rem;
+      color: #7f8c8d;
+      margin-bottom: 12px;
+    }
+
+    /* Contact info */
+    .contact {
+      font-size: 0.95rem;
+      color: #34495e;
+    }
+
+    .contact a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+      .profile-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-card {
+        width: 90%;
+        max-width: 360px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Meet Our Team</h1>
+
+  <section class="profile-container" aria-label="Team Profiles">
+
+    <article class="profile-card" role="region" aria-labelledby="john-name">
+      <img src="john.jpg" alt="Portrait of John Doe" class="profile-pic">
+      <h2 id="john-name" class="name">John Doe</h2>
+      <p class="title">Frontend Developer</p>
+      <p class="contact">
+        <a href="mailto:john@example.com" aria-label="Email John Doe">john@example.com</a><br>
+        <a href="tel:1234567890" aria-label="Call John Doe">+1 123-456-7890</a>
+      </p>
+    </article>
+
+    <article class="profile-card" role="region" aria-labelledby="jane-name">
+      <img src="jane.jpg" alt="Portrait of Jane Smith" class="profile-pic">
+      <h2 id="jane-name" class="name">Jane Smith</h2>
+      <p class="title">Graphic Designer</p>
+      <p class="contact">
+        <a href="mailto:jane@example.com" aria-label="Email Jane Smith">jane@example.com</a><br>
+        <a href="tel:0987654321" aria-label="Call Jane Smith">+1 098-765-4321</a>
+      </p>
+    </article>
+
+  </section>
+
+</body>
+</html>

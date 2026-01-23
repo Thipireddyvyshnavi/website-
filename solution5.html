@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Presentation Dashboard</title>
+
+  <style>
+    /* -------- Base Styles -------- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      color: #2C3E50;
+      line-height: 1.5;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2C3E50;
+    }
+
+    /* -------- Table Styles -------- */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      display: block;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2C3E50;
+      color: white;
+    }
+
+    /* Alternating rows for better readability */
+    tbody tr:nth-child(even) {
+      background-color: #e8f0fe;
+    }
+
+    /* -------- List Section -------- */
+    .list-box {
+      background: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    /* -------- Responsive Design -------- */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+        padding: 8px;
+      }
+
+      .container {
+        width: 95%;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none; /* hide table header on small screens */
+      }
+
+      tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        background: #fff;
+      }
+
+      tbody td {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 6px 10px;
+      }
+
+      tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #2C3E50;
+      }
+    }
+
+    /* -------- Accessibility Focus Styles -------- */
+    a, button, th, td {
+      outline-color: #2C3E50;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Quarterly Sales Dashboard</h1>
+    </header>
+
+    <!-- Table section -->
+    <section aria-labelledby="sales-data-heading">
+      <h2 id="sales-data-heading">Quarterly Sales Data</h2>
+      <table role="table" aria-label="Quarterly sales data">
+        <thead>
+          <tr>
+            <th scope="col">Product Category</th>
+            <th scope="col">Q1</th>
+            <th scope="col">Q2</th>
+            <th scope="col">Q3</th>
+            <th scope="col">Q4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Product Category">Electronics</td>
+            <td data-label="Q1">5000</td>
+            <td data-label="Q2">7000</td>
+            <td data-label="Q3">6500</td>
+            <td data-label="Q4">8000</td>
+          </tr>
+          <tr>
+            <td data-label="Product Category">Clothing</td>
+            <td data-label="Q1">3000</td>
+            <td data-label="Q2">4000</td>
+            <td data-label="Q3">3500</td>
+            <td data-label="Q4">4500</td>
+          </tr>
+          <tr>
+            <td data-label="Product Category">Home Appliances</td>
+            <td data-label="Q1">2000</td>
+            <td data-label="Q2">2500</td>
+            <td data-label="Q3">3000</td>
+            <td data-label="Q4">4000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td data-label="Product Category"><strong>Total</strong></td>
+            <td data-label="Q1"><strong>10000</strong></td>
+            <td data-label="Q2"><strong>13500</strong></td>
+            <td data-label="Q3"><strong>13000</strong></td>
+            <td data-label="Q4"><strong>16500</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Ordered list section -->
+    <section class="list-box" aria-labelledby="top-products-heading">
+      <h2 id="top-products-heading"> Top 5 Performing Products</h2>
+      <ol>
+        <li>Smart Phone</li>
+        <li>Designer Jacket</li>
+        <li>LED TV</li>
+        <li>Washing Machine</li>
+        <li>Sport Shoes</li>
+      </ol>
+    </section>
+  </div>
+</body>
+</html>

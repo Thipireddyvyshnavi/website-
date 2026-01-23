@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bites Menu</title>
+
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      background-color: #ffefd5;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      color: #d2691e;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    /* Section Titles */
+    h2 {
+      color: #8b0000;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 6px;
+      margin: 25px 0 15px;
+      font-size: 1.5rem;
+    }
+
+    /* Menu List */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    strong {
+      color: #333;
+      font-size: 1.1rem;
+    }
+
+    em {
+      color: green;
+      font-style: normal;
+      font-size: 0.9rem;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #d2691e;
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      background-color: #ffefd5;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      li {
+        font-size: 0.95rem;
+        padding: 12px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      .price {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header role="banner">
+    <h1>Delicious Bites Restaurant</h1>
+    <p>Fresh, tasty, and made with love!</p>
+  </header>
+
+  <main>
+    <!-- Appetizers -->
+    <section aria-labelledby="appetizers-title">
+      <h2 id="appetizers-title">Appetizers</h2>
+      <ul>
+        <li>
+          <strong>Bruschetta</strong>
+          <span>Grilled bread topped with tomatoes & basil</span>
+          <em>(Vegetarian)</em>
+          <span class="price">&#8377;500</span>
+        </li>
+        <li>
+          <strong>Chicken Wings</strong>
+          <span>Spicy wings served with garlic dip</span>
+          <em>(Non-Vegetarian)</em>
+          <span class="price">&#8377;550</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Main Courses -->
+    <section aria-labelledby="maincourses-title">
+      <h2 id="maincourses-title">Main Courses</h2>
+      <ul>
+        <li>
+          <strong>Grilled Salmon</strong>
+          <span>Served with lemon butter sauce</span>
+          <em>(Gluten-Free)</em>
+          <span class="price">&#8377;600</span>
+        </li>
+        <li>
+          <strong>Veggie Burger</strong>
+          <span>Loaded with fresh veggies and cheese</span>
+          <em>(Vegetarian)</em>
+          <span class="price">&#8377;200</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Desserts -->
+    <section aria-labelledby="desserts-title">
+      <h2 id="desserts-title">Desserts</h2>
+      <ul>
+        <li>
+          <strong>Chocolate Cake</strong>
+          <span>Rich and moist cake with dark chocolate ganache</span>
+          <span class="price">&#8377;450</span>
+        </li>
+        <li>
+          <strong>Fruit Salad</strong>
+          <span>Seasonal fruits with honey drizzle</span>
+          <em>(Vegan, Gluten-Free)</em>
+          <span class="price">&#8377;350</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Delicious Bites Restaurant | Contact: 
+      <a href="mailto:info@deliciousbites.com">info@deliciousbites.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>

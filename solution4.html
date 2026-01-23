@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <style>
+    
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #2C3E50;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 0;
+    }
+
+    /* ===== Navigation Bar ===== */
+    nav {
+      background-color: #2C3E50;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, nav a:focus {
+      color: #E74C3C;
+    }
+
+    /* ===== Section Layout ===== */
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: #fff;
+      border: 2px solid #2C3E50;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .highlight {
+      color: #E74C3C;
+      font-weight: bold;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav li {
+        margin: 10px 0;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      .card {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Navigation Bar ===== -->
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <!-- About Me Section -->
+    <section id="about" aria-label="About me">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>Hello! I’m a beginner learning <span class="highlight">HTML & CSS</span>. I’m passionate about creating clean, responsive, and accessible websites. This portfolio is a simple example following a consistent style guide.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" aria-label="Skills">
+      <div class="card">
+        <h2>Skills</h2>
+        <p>I’m currently learning and improving my skills in:</p>
+        <ul>
+          <li>HTML5 & Semantic Structure</li>
+          <li>CSS3 & Responsive Design</li>
+          <li>Accessibility Best Practices</li>
+          <li>Basic Web Layout & Typography</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-label="Projects">
+      <div class="card">
+        <h2>Projects</h2>
+        <p>Here are some beginner-level projects I’ve worked on:</p>
+        <ul>
+          <li>Personal Portfolio Website</li>
+          <li>Simple Product Showcase Page</li>
+          <li>Basic Blog Layout with HTML & CSS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-label="Contact">
+      <div class="card contact-info">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+        <p>Location: Your City, Country</p>
+        <p>LinkedIn: <a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

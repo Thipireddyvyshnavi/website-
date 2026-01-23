@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Store - Product Showcase</title>
+  <link rel="icon" href="favicon.ico.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      text-align: center;
+      background-color: #222;
+      color: #fff;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    article {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+    }
+
+    article img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    article h3 {
+      margin: 15px 0 8px;
+      font-size: 1.4rem;
+    }
+
+    article p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 6px 0;
+      padding: 10px 15px;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+
+    /* ✅ Responsive text adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      article h3 {
+        font-size: 1.2rem;
+      }
+      a.button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Laptop Store</h1>
+    <p>Choose your perfect laptop at the best price</p>
+  </header>
+
+  <main>
+    <section aria-label="Laptop product showcase">
+
+      <!-- Laptop 1 -->
+      <article>
+        <h3>Dell Inspiron</h3>
+        <img src="dell.png" alt="Dell Inspiron Laptop">
+        <p>Price: &#8377;45,500</p>
+        <a class="button" href="checkout.html" target="_blank" rel="noopener noreferrer" aria-label="Buy Dell Inspiron">Buy Now</a><br>
+        <a class="button" href="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRtHECXYjs3OUOh3J3f4KrMb5PAqN-6zH0T9kjbW5s1RITjsPn31gNTfv9bkgpAMOiRrY_ae2H6ro3C2ycpFr0mH7IZ3rHtWqjeSewEesFklbxhXrlFT5gZ" 
+        target="_blank" rel="noopener noreferrer" aria-label="View details of Dell Inspiron">View Details</a>
+      </article>
+
+      <!-- Laptop 2 -->
+      <article>
+        <h3>HP Pavilion</h3>
+        <img src="hp .png" alt="HP Pavilion Laptop">
+        <p>Price: &#8377;65,000</p>
+        <a class="button" href="checkout.html" target="_blank" rel="noopener noreferrer" aria-label="Buy HP Pavilion">Buy Now</a><br>
+        <a class="button" href="https://www.amazon.in/HP-i7-1355U-Anti-Glare-fd0468tu-fd0515tu/dp/B0DTTS34NW" 
+        target="_blank" rel="noopener noreferrer" aria-label="View details of HP Pavilion">View Details</a>
+      </article>
+
+      <!-- Laptop 3 -->
+      <article>
+        <h3>Lenovo ThinkPad</h3>
+        <img src="lenovo.png" alt="Lenovo ThinkPad Laptop">
+        <p>Price: &#8377;65,990</p>
+        <a class="button" href="checkout.html" target="_blank" rel="noopener noreferrer" aria-label="Buy Lenovo ThinkPad">Buy Now</a><br>
+        <a class="button" href="https://www.amazon.in/Lenovo-ThinkBook-Fingerprint-Aluminium-21MWA0AUIN/dp/B0FD8TSZQC" 
+        target="_blank" rel="noopener noreferrer" aria-label="View details of Lenovo ThinkPad">View Details</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Laptop Store. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

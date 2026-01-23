@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CANCRI TECHNOLOGIES</title>
+
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header h2 {
+      margin: 5px 0 15px;
+      font-size: 1.2rem;
+      font-weight: normal;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #00509e;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav li {
+      margin: 5px 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      padding: 8px 12px;
+      display: block;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: #003366;
+      outline: none;
+    }
+
+    /* Hamburger Menu Button */
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: 2px solid white;
+      color: white;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+    }
+
+    .menu-toggle:hover,
+    .menu-toggle:focus {
+      background: rgba(255, 255, 255, 0.2);
+      outline: none;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    main h3 {
+      color: #003366;
+      font-size: 1.5rem;
+      border-left: 4px solid #00509e;
+      padding-left: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Back to Top Button */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00509e;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    #backToTop:hover,
+    #backToTop:focus {
+      background-color: #003366;
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header h2 {
+        font-size: 1rem;
+      }
+
+      /* Hide normal nav and show hamburger */
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #00509e;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav li {
+        margin: 10px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      main h3 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #backToTop {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      header h2 {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header role="banner">
+    <h1>CANCRI TECHNOLOGIES</h1>
+    <h2>Innovating the Future</h2>
+
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main role="main">
+    <section id="about" tabindex="0">
+      <h3>About</h3>
+      <p>
+        Cancri Technologies is a forward-thinking company focused on delivering innovative solutions for businesses
+        worldwide. Our team is passionate about technology and dedicated to making a positive impact.
+      </p>
+    </section>
+
+    <section id="services" tabindex="0">
+      <h3>Services</h3>
+      <p>
+        We provide a wide range of services. Our goal is to help businesses grow and succeed in the digital era.
+      </p>
+    </section>
+
+    <section id="portfolio" tabindex="0">
+      <h3>Portfolio</h3>
+      <p>
+        Over the years, we have successfully completed projects for clients across different industries. From small
+        startups to large enterprises, our portfolio showcases our ability to adapt and deliver results.
+      </p>
+    </section>
+
+    <section id="contact" tabindex="0">
+      <h3>Contact Us</h3>
+      <p>
+        Want to work with us? Feel free to reach out via our contact form or email us directly at
+        <strong>xx@cancritech.com</strong>. We’d love to hear from you!
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 CANCRI TECHNOLOGIES. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top" title="Go to top">↑</button>
+
+  <script>
+    // Show the back-to-top button when scrolling
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Hamburger menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navMenu.classList.toggle("show");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+  </script>
+</body>
+</html>
